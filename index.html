@@ -3,47 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>日期和时间</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            margin: 0;
-        }
-        #datetime {
-            font-size: 5em;
-            color: #333;
-            text-align: center;
-        }
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div id="datetime"></div>
-    <script>
-        function updateDateTime() {
-            const now = new Date();
-            const year = now.getFullYear();
-            const month = (now.getMonth() + 1).toString().padStart(2, '0'); // getMonth() 返回的是 0 到 11，所以要加 1
-            const day = now.getDate().toString().padStart(2, '0');
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            const seconds = now.getSeconds().toString().padStart(2, '0');
-            
-            const currentDateTime = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
-            document.getElementById('datetime').textContent = currentDateTime;
-        }
-
-        setInterval(updateDateTime, 1000);
-        updateDateTime();
-    </script>
-    <div class="nr-common-header" align="center" style="font-size:x-small;background-color:#afdbff;">
-        <br>
-        <div style="color:#0f2fff">Copyright 123456789 </div>
-        <br>
-      </div>
+    <iframe 
+    style="border-radius:12px" 
+    src="https://open.spotify.com/embed/track/6HTVZeVQ9J6Uiq6tHESxU9?utm_source=generator" 
+    width="600" height="352" 
+    frameBorder="0" allowfullscreen="" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy"></iframe>
+    
 </body>
 </html>
